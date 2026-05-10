@@ -15,7 +15,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/*NAVBAR CSS*/
+/*NAVBAR*/
 .navbar {
     width: 100%;
     padding: 20px 10px;
@@ -60,6 +60,16 @@ html {
     text-align: center;
     padding: 20px;
     padding-top: 80px;
+}
+
+/* PROFILE IMAGE */
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.5);
 }
 
 .hero-content h1 {
@@ -132,6 +142,31 @@ h2 {
     box-shadow: 0 0 20px rgba(56, 189, 248, 0.5);
  } 
 
+ /* PROJECTS */
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minimax(300px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.project-card {
+    background-color: #1e293b;
+    padding: 25px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    background-color: #334155;
+}
+
+.project-card h3 {
+    margin-bottom: 15px;
+    color: #38bdf8;
+}
+
  /* CONTACT */
  .contact {
     text-align: center;
@@ -153,4 +188,13 @@ h2 {
     .subtitle{
         font-size: 1rem;
     }
+ }
+
+ /* FOOTER */
+ footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #020617;
+    color: #94a3b8;
+    margin-top: 50px;
  }
